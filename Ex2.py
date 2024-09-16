@@ -1,6 +1,16 @@
 import numpy as np
 
-
+def create_matrix():
+    rows = int(input("Nhập số hàng của ma trận: "))
+    cols = int(input("Nhập số cột của ma trận: "))
+    matrix = []
+        for i in range(rows):
+        row = list(map(float, input(f"Nhập hàng {i + 1} (các phần tử cách nhau bởi khoảng trắng): ").split()))
+        if len(row) != cols:
+            raise ValueError("Số cột không khớp với kích thước đã nhập.")
+        matrix.append(row)
+    return np.array(matrix)
+    
 def main():
     print("Tạo ma trận A và B")
     A = np.array([[1, 2], [3, 4]])
