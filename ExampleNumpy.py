@@ -1,7 +1,7 @@
 import numpy as np
 
 def nhap_toa_do(diem):
-    while True:ssasasadasdasdasddads
+    while True:
         try:
             x = float(input(f"Nhập tọa độ x của điểm {diem}: "))
             y = float(input(f"Nhập tọa độ y của điểm {diem}: "))
